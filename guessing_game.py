@@ -14,8 +14,11 @@ def start_game():
     See if you can guess the correct
     number and beat the high score!
     ------------------------------------""")
-    best = high_score()
-    print("The high score is {}!".format(best))
+    if len(all_score) >= 1:
+        best = high_score(all_score)
+        print("The high score is {}!".format(best))
+    else:
+        print("No high score yet")
     while True:
         try:
             guess = int(input("Pick a number between 1 & 10:  "))
@@ -37,13 +40,8 @@ def start_game():
                 attempts += 1
                 print("Too low!")
 
-def high_score():
-    check = 99999999
-    for score in all_score:
-        num_score = int(score)
-        if num_score < check:
-            check = num_score
-    return(check)
+def high_score(score):
+    return min(score)
 
 def restart(response):
     if response[0].lower() == 'y':
