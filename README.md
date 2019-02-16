@@ -5,7 +5,7 @@ This is a simple number guessing game created in Python 3. The user will be prom
  Python 3.x
 
 ## Getting Started
-Start this game by typing the following command in their command prompt:
+Start this game by typing the following command in the terminal/command prompt:
 	python ./guessing_game.py
 
 ## Authors
