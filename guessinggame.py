@@ -14,7 +14,7 @@ print("What a weird name.")
 
 print("Anyway {}, let's play.".format(name))
 
-# Taking input          
+# Taking input
 
 def load():
     while True:
@@ -54,7 +54,7 @@ def start_game():
             print("Noice! You got it in {}!".format(times_guessed))
             high_score.append(times_guessed)
             nochmal()
-    
+
 # Let's do it again
 
 def nochmal():
