@@ -54,19 +54,12 @@ def start_game():
             print("Noice! You got it in {}!".format(times_guessed))
             high_score.append(times_guessed)
             nochmal()
-
-
-# Sort the high score list and show lowest number
-
-def highscore():
-
-    print("The high score is {}.".format(min(high_score)))
     
 # Let's do it again
 
 def nochmal():
 
-    highscore()
+    print("The high score is {}.".format(min(high_score)))
 
     again = input("Try again? (Y/N)    ")
 
@@ -78,14 +71,3 @@ def nochmal():
         sys.exit()
 
 start_game()
-
-
-
-
-
-
-
-
-
-
-    
